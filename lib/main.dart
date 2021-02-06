@@ -41,3 +41,33 @@ class MyApp extends StatelessWidget { // widget
     );
   }
 }
+
+/*
+  Boiler plate command: stful
+  RandomWords => a widget creates a State class called _RanmdomWordsState
+
+  State class is prefiexed by an underbar. 
+    - (_) enforces privacy in Dart.
+    - Recommended best practice for State objects.
+
+ */
+class RandomWords extends StatefulWidget {
+  @override
+  _RandomWordsState createState() => _RandomWordsState();
+}
+
+/*
+  State<RandomWords> : indicates that you are using generic State class
+  specialized for use with RandomWords.
+
+  It retains the state for the RandomWords widget.
+  This class will save the list of generated word pairs
+ */
+class _RandomWordsState extends State<RandomWords> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      
+    );
+  }
+}
