@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget { // widget
     A widgets main job is to build a tree
   */
   Widget build(BuildContext context) {
-    
+    final wordPair = WordPair.random();
     return MaterialApp(
       title: 'Welcome to Flutter',
       /*
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget { // widget
           title: Text('Welcome to Flutter'),
         ),
         body: Center(
-          child: Text('Hello World'),
+          child: Text(wordPair.asPascalCase),
         ),
         bottomNavigationBar : BottomAppBar(
           child: Row(
